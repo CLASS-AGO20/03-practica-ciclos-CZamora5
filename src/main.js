@@ -32,7 +32,7 @@ export default class App {
 
 let app = new App();
 
-//Probando método factorial(numero);
+//Probando método factorial(numero)
 let a = 3;
 let b = 6;
 let c = 11;
@@ -42,7 +42,7 @@ console.log(`El factorial de ${b} es ${app.factorial(b)}`);
 console.log(`El factorial de ${c} es ${app.factorial(c)}`);
 console.log(`El factorial de ${c-a} es ${app.factorial(c-a)}`);
 
-//Probando método convertirAString(numero);
+//Probando método convertirAString(numero)
 a = 3;
 b = 19;
 c = 30;
@@ -51,3 +51,16 @@ console.log(`El siguiente string tiene ${a} asteriscos: ${app.convertirAString(a
 console.log(`El siguiente string tiene ${b} asteriscos: ${app.convertirAString(b)}`);
 console.log(`El siguiente string tiene ${c} asteriscos: ${app.convertirAString(c)}`);
 console.log(`El siguiente string tiene ${a+b+c} asteriscos: ${app.convertirAString(a+b+c)}`);
+
+//Probando método obtenerDivisbles(numero)
+a = 24;
+b = 72;
+c = app.factorial(6);
+let d = app.factorial(9);
+let e = 6;
+console.log(`Probando método obtenerDivisbles(numero):`);
+console.log(`El número ${a} tiene ${app.obtenerDivisibles(a)} divisores positivos`);
+console.log(`El número ${b} tiene ${app.obtenerDivisibles(b)} divisores positivos`);
+console.log(`El número ${c} tiene ${app.obtenerDivisibles(c)} divisores positivos`);
+console.log(`El número ${d} tiene ${app.obtenerDivisibles(d)} divisores positivos`);
+console.log(`El número ${e} tiene ${app.obtenerDivisibles(e)} divisores positivos`);
