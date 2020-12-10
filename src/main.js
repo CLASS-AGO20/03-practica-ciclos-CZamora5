@@ -16,6 +16,18 @@ export default class App {
         }
         return str;
     }
+
+    obtenerDivisibles(numero){
+        let result = 0;
+        let i = 1;
+        do{
+            if(numero % i == 0){
+                result ++;
+            }
+            i++;
+        }while(i <= numero);
+        return result;
+    }
 }
 
 let app = new App();
