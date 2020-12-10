@@ -9,3 +9,12 @@ export default class App {
 }
 
 let app = new App();
+
+//Probando método factorial(numero);
+let a = 3;
+let b = 6;
+let c = 11;
+console.log(`El factorial de ${a} es ${app.factorial(a)}`);
+console.log(`El factorial de ${b} es ${app.factorial(b)}`);
+console.log(`El factorial de ${c} es ${app.factorial(c)}`);
+console.log(`El factorial de ${c-a} es ${app.factorial(c-a)}`);
