@@ -28,6 +28,14 @@ export default class App {
         }while(i <= numero);
         return result;
     }
+
+    elevar(numero, potencia){
+        let result = 1;
+        for(let i = 1; i <= potencia; i++){
+            result *= numero;
+        }
+        return numero;
+    }
 }
 
 let app = new App();
