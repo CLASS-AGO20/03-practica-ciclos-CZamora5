@@ -34,7 +34,7 @@ export default class App {
         for(let i = 1; i <= potencia; i++){
             result *= numero;
         }
-        return numero;
+        return result;
     }
 }
 
@@ -72,3 +72,16 @@ console.log(`El número ${b} tiene ${app.obtenerDivisibles(b)} divisores positiv
 console.log(`El número ${c} tiene ${app.obtenerDivisibles(c)} divisores positivos`);
 console.log(`El número ${d} tiene ${app.obtenerDivisibles(d)} divisores positivos`);
 console.log(`El número ${e} tiene ${app.obtenerDivisibles(e)} divisores positivos`);
+
+//Probando método elevar(potencia)
+a = 2;
+b = 3;
+c = 4;
+d = 5;
+e = 6;
+console.log(`Probando método elevar(numero, potencia):`);
+console.log(`${a} elevado a la potencia ${b} es igual a ${app.elevar(a, b)}`);
+console.log(`${b} elevado a la potencia ${c} es igual a ${app.elevar(b, c)}`);
+console.log(`${c} elevado a la potencia ${d} es igual a ${app.elevar(c, d)}`);
+console.log(`${d} elevado a la potencia ${e} es igual a ${app.elevar(d, e)}`);
+console.log(`${e} elevado a la potencia ${a} es igual a ${app.elevar(e, a)}`);
